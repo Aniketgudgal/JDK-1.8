@@ -1,4 +1,5 @@
 @FunctionalInterface
+// functional interface required only one method
 interface Lambda
 {
 	void display();
