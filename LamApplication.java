@@ -7,6 +7,7 @@ public class LamApplication
 	public static void main(String x[])
 	{
 		// this is the anonymous inner class
+		/*
 		Lambda a = new Lambda(){
 			public void display()
 			{
@@ -14,6 +15,10 @@ public class LamApplication
 			}
 		};
 		// calling interface method
+		a.display();
+		*/
+		// converting anonymous inner to lambda expression
+		Lambda a = () -> System.out.println("My name is Aniket");
 		a.display();
 	}
 }
