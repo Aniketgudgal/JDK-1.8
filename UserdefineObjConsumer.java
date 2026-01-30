@@ -59,7 +59,7 @@ public class UserdefineObjConsumer
 		ArrayList<Vehicle> al = new ArrayList<>();
 		al.add(v1);
 		al.add(v2);
-
+		/*
 		// simple anonymous inner class
 		Consumer<Vehicle> cn = new Consumer<Vehicle>(){
 			public void accept(Vehicle v)
@@ -67,6 +67,8 @@ public class UserdefineObjConsumer
 				System.out.println(v.getName()+"\t"+v.getRegistrationNum()+"\t"+v.getCapacityEngine()+"\t"+v.getWheel());
 			}
 		};
+		*/
+		Consumer<Vehicle> cn = (v)->System.out.println(v.getName()+"\t"+v.getRegistrationNum()+"\t"+v.getCapacityEngine()+"\t"+v.getWheel());
 		al.forEach(cn);
 	}
 }
