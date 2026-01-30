@@ -19,8 +19,12 @@ public class ConsumerApplication
 		}
 		};
 		*/
+		
+		/*
 		// consumer with lambda expression
 		Consumer<Integer> al = (val)-> System.out.println(val);
 		ls.forEach(al);
+		*/
+		ls.forEach((val) -> System.out.println(val));
 	}
 }
