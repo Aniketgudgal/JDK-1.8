@@ -68,7 +68,13 @@ public class UserdefineObjConsumer
 			}
 		};
 		*/
+		
+		/*
+		// user define object with lambda expression
 		Consumer<Vehicle> cn = (v)->System.out.println(v.getName()+"\t"+v.getRegistrationNum()+"\t"+v.getCapacityEngine()+"\t"+v.getWheel());
 		al.forEach(cn);
+		*/
+		
+		al.forEach((v)->System.out.println(v.getName()+"\t"+v.getRegistrationNum()+"\t"+v.getCapacityEngine()+"\t"+v.getWheel()));
 	}
 }
