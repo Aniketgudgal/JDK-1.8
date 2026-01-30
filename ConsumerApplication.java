@@ -25,6 +25,7 @@ public class ConsumerApplication
 		Consumer<Integer> al = (val)-> System.out.println(val);
 		ls.forEach(al);
 		*/
+		
 		// shortcut method
 		ls.forEach((val) -> System.out.println(val));
 	}
