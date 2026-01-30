@@ -11,6 +11,7 @@ public class ConsumerApplication
 		ls.add(200);
 		ls.add(300);
 		/*
+		// consumer interface contain  one method that is accept and this method take one parameter and the return type of this method is void
 		// Consumer interface with anonymous inner class
 		Consumer<Integer> al = new Consumer<Integer>(){
 		public void accept(Integer num)
