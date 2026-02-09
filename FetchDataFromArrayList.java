@@ -15,10 +15,22 @@ public class FetchDataFromArrayList
 			al.add(sc.nextInt());
 		}
 		System.out.println("The Array List data is following");
+		// fetch data using anonymous inner class
+		/* 
+		Consumer<Integer> cm = new Consumer<>()
+		{
+			public void accept(Integer x)
+			{
+				System.out.print(x+" ");
+			}
+		};
+		al.forEach(cm);
+		*/
+		// fetch data using lambda
 		/*
 		Consumer<Integer> cm = (v)->System.out.print(v+" ");
 		al.forEach(cm);
 		*/
-		al.forEach((v)->System.out.print(v+" "));
+		//al.forEach((v)->System.out.print(v+" "));
 	}
 }
