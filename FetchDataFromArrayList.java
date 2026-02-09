@@ -15,7 +15,10 @@ public class FetchDataFromArrayList
 			al.add(sc.nextInt());
 		}
 		System.out.println("The Array List data is following");
+		/*
 		Consumer<Integer> cm = (v)->System.out.print(v+" ");
 		al.forEach(cm);
+		*/
+		al.forEach((v)->System.out.print(v+" "));
 	}
 }
