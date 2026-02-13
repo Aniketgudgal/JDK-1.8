@@ -5,6 +5,7 @@ public class PredicateApplication
 	public static void main(String x[])
 	{
 		Scanner sc = new Scanner(System.in);
+		/*
 		Predicate<Integer> p = new Predicate<Integer>()
 		{
 			public boolean test(Integer a)
@@ -12,6 +13,8 @@ public class PredicateApplication
 				return a % 2 == 0 ? true:false;
 			}
 		};
+		*/
+		Predicate<Integer> p = (val) -> val % 2 == 0 ? true: false;
 		System.out.print("Enter the number: ");
 		boolean result = p.test(sc.nextInt());
 		System.out.println("The number is even: "+result);
