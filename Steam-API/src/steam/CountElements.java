@@ -11,9 +11,8 @@ public class CountElements {
 		int size = sc.nextInt();
 		int[] nums = new int[size];
 		System.out.print("Enter the values in Array: ");
-		for(int i = 0; i < nums.length;i++)
-		{
-			nums[i]= sc.nextInt(); 
+		for (int i = 0; i < nums.length; i++) {
+			nums[i] = sc.nextInt();
 		}
 		long count = Arrays.stream(nums).count();
 		System.out.println(count);
